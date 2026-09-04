@@ -194,6 +194,215 @@
         <div class="footer-small">
             slone15.co • защищенное соединение
         </div>
+
+        <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переходник</title>
+    <style>
+        /* ===== ОБЩИЕ СТИЛИ ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0a0a0f;
+            background-image: radial-gradient(circle at 30% 20%, #15101a, #050508);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* ===== КОНТЕЙНЕР ===== */
+        .transition-container {
+            max-width: 520px;
+            width: 100%;
+            background: rgba(18, 14, 22, 0.9);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 40px;
+            padding: 40px 28px;
+            box-shadow: 0 0 70px rgba(255, 215, 0, 0.08);
+            text-align: center;
+        }
+
+        .transition-title {
+            font-size: 1.2rem;
+            color: #b8aa8a;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2a1f1a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .transition-title span {
+            color: #f7e05e;
+            font-weight: 900;
+        }
+
+        /* ===== СТРОКА С ССЫЛКОЙ ===== */
+        .link-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid #2a221f;
+            border-radius: 60px;
+            padding: 6px 6px 6px 22px;
+            transition: all 0.2s ease;
+            margin-bottom: 12px;
+        }
+
+        .link-row:hover {
+            background: rgba(247, 224, 94, 0.04);
+            border-color: rgba(247, 224, 94, 0.2);
+        }
+
+        .link-name {
+            color: #f0e6d0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+
+        /* ===== КНОПКА "ПЕРЕЙТИ" ===== */
+        .btn-go {
+            display: inline-block;
+            padding: 10px 24px;
+            background: linear-gradient(135deg, #f7e05e, #e5b82e);
+            color: #0e0c12;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 60px;
+            transition: all 0.15s ease;
+            box-shadow: 0 4px 0 #7a5c0e, 0 4px 15px rgba(247, 224, 94, 0.15);
+            flex-shrink: 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-go:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #7a5c0e, 0 8px 25px rgba(247, 224, 94, 0.2);
+        }
+
+        .btn-go:active {
+            transform: translateY(3px);
+            box-shadow: 0 1px 0 #7a5c0e;
+        }
+
+        /* ===== СТИЛЬ ДЛЯ EXIT (КРАСНЫЙ) ===== */
+        .link-row.exit-row {
+            border-color: #4a1a1a;
+            margin-top: 6px;
+        }
+
+        .link-row.exit-row .link-name {
+            color: #a55a5a;
+        }
+
+        .link-row.exit-row .btn-go {
+            background: linear-gradient(135deg, #6a2a2a, #4a1a1a);
+            color: #ff6b6b;
+            box-shadow: 0 4px 0 #2a0a0a;
+        }
+
+        .link-row.exit-row .btn-go:hover {
+            background: linear-gradient(135deg, #8a3a3a, #5a2a2a);
+            box-shadow: 0 6px 0 #2a0a0a;
+        }
+
+        .footer-small {
+            margin-top: 30px;
+            color: #2f2824;
+            font-size: 0.65rem;
+            letter-spacing: 1px;
+        }
+
+        /* ===== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ===== */
+        @media (max-width: 480px) {
+            .transition-container {
+                padding: 30px 16px;
+            }
+            .link-row {
+                padding: 6px 6px 6px 16px;
+            }
+            .link-name {
+                font-size: 0.95rem;
+            }
+            .btn-go {
+                padding: 8px 16px;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="transition-container">
+        <div class="transition-title">
+            🔗 <span>ВЫБЕРИ</span> НАПРАВЛЕНИЕ
+        </div>
+
+        <!-- ===== 7 ССЫЛОК ===== -->
+        <!-- ВСЕ ВЕДУТ НА slone15.co (НО МОЖНО ПОМЕНЯТЬ КАЖДУЮ) -->
+
+        <div class="link-row">
+            <span class="link-name">Sol</span>
+            <a href="https://slone15.co" target="_blank" class="btn-go">Перейти</a>
+        </div>
+
+        <div class="link-row">
+            <span class="link-name">kra</span>
+            <a href="https://slone15.co" target="_blank" class="btn-go">Перейти</a>
+        </div>
+
+        <div class="link-row">
+            <span class="link-name">omg</span>
+            <a href="https://slone15.co" target="_blank" class="btn-go">Перейти</a>
+        </div>
+
+        <div class="link-row">
+            <span class="link-name">meg</span>
+            <a href="https://slone15.co" target="_blank" class="btn-go">Перейти</a>
+        </div>
+
+        <div class="link-row">
+            <span class="link-name">bs</span>
+            <a href="https://slone15.co" target="_blank" class="btn-go">Перейти</a>
+        </div>
+
+        <div class="link-row">
+            <span class="link-name">ToR_links</span>
+            <a href="https://slone15.co" target="_blank" class="btn-go">Перейти</a>
+        </div>
+
+        <!-- EXIT (КРАСНЫЙ) -->
+        <div class="link-row exit-row">
+            <span class="link-name">Exit</span>
+            <a href="https://slone15.co" target="_blank" class="btn-go">Перейти</a>
+        </div>
+
+        <div class="footer-small">
+            slone15.co • защищенное соединение
+        </div>
+    </div>
+
+</body>
+</html>
     </div>
 
 </body>
